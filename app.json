@@ -1,0 +1,6 @@
+{
+  "name": "flask-cgk",
+  "description": "A hello world app in Flask for deploying to Heroku.",
+  "repository": "https://github.com/cgkaczenski/flask-intro",
+  "keywords": ["flask", "heroku"]
+}
