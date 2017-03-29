@@ -12,7 +12,7 @@ import urllib
 app = Flask(__name__)
 
 try:
-	OPEN_WEATHER_KEY = environ.get("open_weather")
+	OPEN_WEATHER_KEY = environ['open_weather']
 except:
 	OPEN_WEATHER_KEY = ow_key()
 
