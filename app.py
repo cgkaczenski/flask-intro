@@ -1,16 +1,18 @@
+
 from config import open_weather_key as ow_key
 import feedparser
 from flask import Flask
 from flask import render_template
 from flask import request
 import json
+from os import environ
 import urllib2
 import urllib
 
 app = Flask(__name__)
 
 try:
-	OPEN_WEATHER_KEY = process.env.open_weather
+	OPEN_WEATHER_KEY = environ.get("open_weather")
 except:
 	OPEN_WEATHER_KEY = ow_key()
 
